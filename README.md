@@ -6,7 +6,7 @@ In the [surfaces-series](https://github.com/Acry/SDL2-Surfaces) I did some naive
 
 Just for getting in, `1.c` does normalized linear raise of the y-value.
 
-###Impulse
+### Impulse
 
 Grows quickly, falls off slowly.
 ![](impulse_n.png)
@@ -32,7 +32,7 @@ Note:
 The mathplotlib sources in Python 3 for the diagrams are in the source directory.
 One can use them to show the diagrams interactive or print higher resolutions.
 
-####Implement an animation with x and y values.
+#### Implement an animation with x and y values.
 The duration will be 5 seconds.
 K is a constant  - I am going to plug 1.5 in here, so the curve should look like this:
 ![](impulse.png)
