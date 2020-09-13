@@ -11,16 +11,16 @@
 #define WW 550
 #define WH (WW/16)*9
 
-int ww;
-int wh;
-int running;
-SDL_Window	*Window;
-SDL_Renderer	*Renderer;
-SDL_Event	event;
-SDL_Surface	*temp_surface;
-SDL_Texture	*logo;
-SDL_Rect 	logo_dst;
-SDL_Point	mouse;
+extern int ww;
+extern int wh;
+extern int running;
+extern SDL_Window	*Window;
+extern SDL_Renderer	*Renderer;
+extern SDL_Event	event;
+extern SDL_Surface	*temp_surface;
+extern SDL_Texture	*logo;
+extern SDL_Rect 	logo_dst;
+extern SDL_Point	mouse;
 
 void assets_in	(void);
 void assets_out	(void);

@@ -1,6 +1,14 @@
 #include "helper.h"
 SDL_Window   	*Window	  = NULL;
 SDL_Renderer 	*Renderer = NULL;
+SDL_Surface	*temp_surface = NULL;
+SDL_Texture	*logo = NULL;
+SDL_Rect 	logo_dst;
+
+int ww;
+int wh;
+int running;
+SDL_Event	event;
 
 void init(void)
 {
@@ -16,8 +24,8 @@ SDL_FreeSurface(icon);
 Renderer = SDL_CreateRenderer(Window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 SDL_SetRenderDrawBlendMode(Renderer, SDL_BLENDMODE_BLEND);
 SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
-SDL_SetWindowPosition(Window,0,0);
 SDL_SetWindowSize(Window,ww,wh);
+SDL_SetWindowPosition(Window,SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED);
 SDL_ShowWindow(Window);
 
 }

@@ -42,6 +42,8 @@ That means that the y-value of the actor will be maxed after less than a second 
 So k and t went into the function, returning a float between 0.0 and 1.0, which was used as height in percentage. Just remember SDL's Y starts at 0, so that the actual current height is:
 `pos.y = max_h-y;`
 
+![](impulse.gif)
+
 ## Useful links
 
 [Inigo Quilez's Graphtoy](https://graphtoy.com/)
