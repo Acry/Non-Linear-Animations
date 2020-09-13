@@ -1,12 +1,12 @@
-
-
-# Non linear animations
+# Non linear animations & Shaping functions
 
 In the [surfaces-series](https://github.com/Acry/SDL2-Surfaces) I did some naive linear animations and scaling. This is a demo series about non linear animations. To get more control I am gonna use floats here, now I need some non linear functions. Math provides tons of those functions. In computer graphics shaping functions are well known and used to create procedural graphics, too. But, one can use those functions also to shape the time-steps, positions or colors.
 
 Just for getting in, `1.c` does normalized linear raise of the y-value.
 
-### Impulse
+![](https://c4.staticflickr.com/8/7346/9546075099_14b91d8dec_h.jpg)
+
+## Impulse
 
 Grows quickly, falls off slowly.
 ![](impulse_n.png)
@@ -32,7 +32,8 @@ Note:
 The mathplotlib sources in Python 3 for the diagrams are in the source directory.
 One can use them to show the diagrams interactive or print higher resolutions.
 
-#### Implement an animation with x and y values.
+### Implement an animation with x and y values.
+
 The duration will be 5 seconds.
 K is a constant  - I am going to plug 1.5 in here, so the curve should look like this:
 ![](impulse.png)
@@ -41,9 +42,16 @@ That means that the y-value of the actor will be maxed after less than a second 
 So k and t went into the function, returning a float between 0.0 and 1.0, which was used as height in percentage. Just remember SDL's Y starts at 0, so that the actual current height is:
 `pos.y = max_h-y;`
 
-### Useful links
+## Useful links
+
+[Inigo Quilez's Graphtoy](https://graphtoy.com/)
+
+[Inigo Quilez's useful little functions](https://www.iquilezles.org/www/articles/functions/functions.htm)
+
+[The Book of Shaders - Chapter 5](https://thebookofshaders.com/05/)
+
 [SDL2](https://www.libsdl.org/) / [SDL-Discourse](https://discourse.libsdl.org)  
 
-[My SDL2 Demo-Collection](https://acry.github.io/c.html)
+[My SDL2 Demo-Collection](https://acry.github.io/SDL2-C.html)
 
 [Contact me](https://acry.github.io/#contact)
