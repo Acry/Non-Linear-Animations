@@ -65,34 +65,34 @@ The concept of `tweening` originally came from traditional animation. Animators 
 Some of the most common shaping functions:
 
 1. **Linear**:
-    - Formula: \(f(t) = t\)
-    - Description: Constant speed, no acceleration or deceleration.
+   - Formula: $f(t) = t$
+   - Description: Constant speed, no acceleration or deceleration.
 
 2. **Ease-in (quadratic, cubic, quartic, quintic)**:
-    - Formula (quadratic): \(f(t) = t^2\)
-    - Description: Slow start, accelerating toward the end.
+   - Formula (quadratic): $f(t) = t^2$
+   - Description: Slow start, accelerating toward the end.
 
 3. **Ease-out (quadratic, cubic, quartic, quintic)**:
-    - Formula (quadratic): \(f(t) = t \times (2 - t)\)
-    - Description: Fast start, decelerating toward the end.
+   - Formula (quadratic): $f(t) = t \times (2 - t)$
+   - Description: Fast start, decelerating toward the end.
 
 4. **Ease-in-out (quadratic, cubic, quartic, quintic)**:
-    - Formula (quadratic): \(f(t) = t < 0.5 ? 2t^2 : -1 + (4 - 2t) \times t\)
-    - Description: Slow start, acceleration in the middle, deceleration toward the end.
+   - Formula (quadratic): $f(t) = t < 0.5 ? 2t^2 : -1 + (4 - 2t) \times t$
+   - Description: Slow start, acceleration in the middle, deceleration toward the end.
 
 5. **Sine**:
-    - Formula: \(f(t) = \sin(t \times \frac{\pi}{2})\)
-    - Description: Sine curve for smoother transitional animation.
+   - Formula: $f(t) = \sin(t \times \frac{\pi}{2})$
+   - Description: Sine curve for smoother transitional animation.
 
 6. **Exponential**:
-    - Formula (Ease-in): \(f(t) = 2^{10(t-1)}\)
-    - Description: An exponentially increasing or decreasing function.
+   - Formula (Ease-in): $f(t) = 2^{10(t-1)}$
+   - Description: An exponentially increasing or decreasing function.
 
 7. **Bounce**:
-    - Description: Simulates a "bounce effect", as if an object were dropping onto a surface and rebounding multiple times.
+   - Description: Simulates a "bounce effect", as if an object were dropping onto a surface and rebounding multiple times.
 
 8. **Elastic**:
-    - Description: An overshooting effect at the end of the animation, similar to an elastic band.
+   - Description: An overshooting effect at the end of the animation, similar to an elastic band.
 
 In computer graphics, and especially in user interface development and gaming, these functions are frequently used to make animations, transitions, and movements more realistic and appealing. Many graphic libraries and frameworks already offer built-in functions for these shaping functions, making it easy for developers to integrate them into their projects.
 
